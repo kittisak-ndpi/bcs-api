@@ -1,19 +1,21 @@
 package com.buu.bcs.configuration.been;
 
+import java.nio.charset.StandardCharsets;
+
+import javax.persistence.AttributeConverter;
+import javax.persistence.Converter;
+
 import org.jasypt.util.binary.AES256BinaryEncryptor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnExpression;
 import org.springframework.stereotype.Component;
 
-import javax.persistence.AttributeConverter;
-import javax.persistence.Converter;
-import java.nio.charset.StandardCharsets;
-
 @Converter
 @Component
 @ConditionalOnExpression(value = "'${app.secret.encryption.password}' matches '[0-9A-z]+(.*)'")
 public class AesNonSearchableAttributeConverter implements AttributeConverter<String, String> {
+
     private static AES256BinaryEncryptor aes256BinaryEncryptor = new AES256BinaryEncryptor();
 
     @Autowired
@@ -40,4 +42,5 @@ public class AesNonSearchableAttributeConverter implements AttributeConverter<St
                 .decrypt(dbData.getBytes(StandardCharsets.ISO_8859_1));
         return new String(decrypted, StandardCharsets.UTF_8);
     }
+
 }
