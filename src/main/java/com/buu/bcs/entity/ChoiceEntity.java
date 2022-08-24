@@ -11,23 +11,23 @@ public class ChoiceEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "sbc_ans_id")
-    private String ans_id;
+    private String sbc_ans_id;
 
     @Column(name = "answ_index")
-    private LocalDateTime ans_index;
+    private LocalDateTime answ_index;
 
     @Column(name = "sbc_answer")
     private LocalDateTime answer;
 
     @Column(name = "ans_create_date")
-    private LocalDateTime create_date;
+    private LocalDateTime ans_create_date;
 
     @Column(name = "ans_create_by")
-    private String create_by;
+    private String ans_create_by;
 
     @Column(name = "ans_update_date")
-    private LocalDateTime update_date;
+    private LocalDateTime ans_update_date;
 
     @Column(name = "ans_update_by")
-    private String update_by;
+    private String ans_update_by;
 }
