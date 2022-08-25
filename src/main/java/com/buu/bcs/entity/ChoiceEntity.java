@@ -13,11 +13,11 @@ public class ChoiceEntity {
     @Column(name = "sbc_ans_id")
     private String sbc_ans_id;
 
-    @Column(name = "answ_index")
-    private LocalDateTime answ_index;
+    @Column(name = "ans_index")
+    private int ans_index;
 
     @Column(name = "sbc_answer")
-    private LocalDateTime answer;
+    private String answer;
 
     @Column(name = "ans_create_date")
     private LocalDateTime ans_create_date;

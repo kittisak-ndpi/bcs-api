@@ -15,25 +15,27 @@ public class QuestionDto {
     public static class QuestionRequest {
 
         @JsonProperty("id")
-        private String sbc_ans_id;
+        private String qt_id;
 
-        @JsonProperty("index")
-        private LocalDateTime answ_index;
+        @JsonProperty(name = "qt_index")
+        private int qt_index;
 
-        @JsonProperty("answer")
-        private LocalDateTime answer;
+        @JsonProperty(name = "qt_question")
+        private String qt_question;
 
-        @JsonProperty("ans_create_date")
-        private LocalDateTime ans_create_date;
+        @JsonProperty(name = "qt_create_date")
+        private LocalDateTime create_date;
 
-        @JsonProperty("ans_create_by")
-        private String ans_create_by;
+        @JsonProperty(name = "qt_create_by")
+        private String create_by;
 
-        @JsonProperty("ans_update_date")
-        private LocalDateTime ans_update_date;
+        @JsonProperty(name = "qt_update_date")
+        private LocalDateTime update_date;
 
-        @JsonProperty("ans_update_by")
-        private String ans_update_by;
+        @JsonProperty(name = "qt_update_by")
+        private String update_by;
+    }
+
     }
 
 

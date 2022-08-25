@@ -14,7 +14,7 @@ public class QuestionTopicEntity {
     private String ex_id;
 
     @Column(name = "sbc_title")
-    private LocalDateTime title;
+    private String title;
 
     @Column(name = "sbc_create_date")
     private LocalDateTime create_date;

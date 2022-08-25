@@ -19,10 +19,10 @@ public class QuestionEntity {
     private String qt_id;
 
     @Column(name = "qt_index")
-    private LocalDateTime qt_index;
+    private int qt_index;
 
     @Column(name = "qt_question")
-    private LocalDateTime qt_question;
+    private String qt_question;
 
     @Column(name = "qt_create_date")
     private LocalDateTime create_date;
