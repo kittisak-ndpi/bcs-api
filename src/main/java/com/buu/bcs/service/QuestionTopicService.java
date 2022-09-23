@@ -1,4 +1,4 @@
-package com.buu.bcs.service.impl;
+package com.buu.bcs.service;
 
 import com.buu.bcs.dto.questiontopic.QuestionTopicDto;
 
