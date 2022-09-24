@@ -1,7 +1,6 @@
 package com.buu.bcs.repository.impl;
 
 import com.buu.bcs.entity.QuestionTopicEntity;
-import com.buu.bcs.repository.QuestionRepository;
 import com.buu.bcs.repository.QuestionTopicRepository;
 
 import java.util.Optional;

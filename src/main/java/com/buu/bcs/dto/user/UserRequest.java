@@ -7,6 +7,16 @@ import org.springframework.lang.Nullable;
 
 @NoArgsConstructor(access = AccessLevel.NONE)
 public class UserRequest {
+    @Getter
+    @Setter
+    @Builder
+    @AllArgsConstructor
+    @JsonIgnoreProperties(ignoreUnknown = true)
+    @NoArgsConstructor(access = AccessLevel.NONE)
+    public static class Regis {
+
+    }
+
 
     @NoArgsConstructor(access = AccessLevel.NONE)
     public static class Authen {

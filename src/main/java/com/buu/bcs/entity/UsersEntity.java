@@ -1,10 +1,15 @@
 package com.buu.bcs.entity;
 
 
+import lombok.Getter;
+import lombok.Setter;
+
 import javax.persistence.*;
 import java.time.LocalDateTime;
 
 @Entity
+@Getter
+@Setter
 @Table(name = "tab_users")
 public class UsersEntity {
 
